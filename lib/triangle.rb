@@ -39,7 +39,7 @@ class Triangle
     if false_triangl? == true 
       begin
         raise TriangleError
-        error.message
+        puts error.message
       end
     else false_triangl == false 
       valid_triangl?
