@@ -39,6 +39,7 @@ class Triangle
     if false_triangl? == true 
       begin
         raise TriangleError
+        error.message
       end
     else false_triangl == false 
       valid_triangl?
@@ -47,6 +48,8 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    puts "Not a valid triangle"
+    def message
+    puts "Not a valid triangle. Try again."
+  end
   end
 end
