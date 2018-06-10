@@ -5,7 +5,7 @@ class Triangle
     
   end
   
-  def self.kind
+  def kind
     if @length_1 == @length_2 && @length_1 == @length_3 
       :equilateral
     end
