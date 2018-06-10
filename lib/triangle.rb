@@ -39,7 +39,6 @@ class Triangle
     if false_triangl? == true 
       begin
         raise TriangleError
-      rescue TriangleError
       end
     else valid_triangl?
     end
