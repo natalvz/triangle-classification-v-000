@@ -21,7 +21,7 @@ class Triangle
     end 
   end
 
-  def valid_triangl
+  def valid_triangl?
         if @length_1 == @length_2 && @length_2 == @length_3 
       :equilateral
     elsif @length_1 == @length_2 && @length_2 != @length_3 
@@ -37,8 +37,9 @@ class Triangle
     
   def kind
     if false_triangl? == true 
-      begin 
       raise TriangleError
+    else valid_triangl?
+    end
       
   end
   
