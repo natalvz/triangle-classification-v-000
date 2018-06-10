@@ -40,7 +40,8 @@ class Triangle
       begin
         raise TriangleError
       end
-    else valid_triangl?
+    else false_triangl == false 
+      valid_triangl?
     end
       
   end
