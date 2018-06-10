@@ -6,7 +6,7 @@ class Triangle
   end
   
   def kind
-    if @length_2 != @length_3 || @length_1 != @length_2 || @length_3 != @length_2
+    if @length_2 == @length_3  && @|| @length_1 != @length_2 || @length_3 != @length_2
       :isosceles
     else @length_1.eql?(@length_2) && @length_1.eql?(@length_3) && @length_2.eql?(@length_3)
       :equilateral
