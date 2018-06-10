@@ -41,7 +41,7 @@ class Triangle
         raise TriangleError
         puts error.message
       end
-    else false_triangl == false 
+    else 
       valid_triangl?
     end
       
