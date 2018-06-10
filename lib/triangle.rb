@@ -38,6 +38,8 @@ class Triangle
   def kind
     if false_triangl? == true 
       begin 
+      raise TriangleError
+      
   end
   
   class TriangleError < StandardError
