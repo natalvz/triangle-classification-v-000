@@ -11,22 +11,18 @@ class Triangle
     if @length_1 == 0 || @length_2 == 0 || @length_3 == 0
         true
       elsif @length_1 + @length_2 > @length_3
-
+        true
       elsif @length_2 + @length_3 > @length_1
-
+        true
       elsif @length_1 + @length_3 > @length_2
+        true
+      else 
+        false 
+    end 
+  end
 
-    
-  def kind
-    if @length_1 == 0 || @length_2 == 0 || @length_3 == 0
-        raise TriangleError
-      elsif @length_1 + @length_2 > @length_3
-        raise TriangleError
-      elsif @length_2 + @length_3 > @length_1
-        raise TriangleError
-      elsif @length_1 + @length_3 > @length_2
-        raise TriangleError
-      elsif@length_1 == @length_2 && @length_2 == @length_3 
+  def validtriangl
+        if @length_1 == @length_2 && @length_2 == @length_3 
       :equilateral
     elsif @length_1 == @length_2 && @length_2 != @length_3 
       :isosceles
@@ -34,11 +30,16 @@ class Triangle
       :isosceles
     elsif @length_1 == @length_3 && @length_1 != @length_2
       :isosceles
-    elsif @length_1 != @length_2 && @length_2 != @length_3 && @length_1 != @length_3
+    else @length_1 != @length_2 && @length_2 != @length_3 && @length_1 != @length_3
       :scalene
     end
+  end 
+    
+  def kind
+
   end
   
   class TriangleError < StandardError
+    puts "Not a valid triangle"
   end
 end
