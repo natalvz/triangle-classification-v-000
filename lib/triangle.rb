@@ -37,6 +37,7 @@ class Triangle
     
   def kind
     if false_triangl? == true 
+      begin
       raise TriangleError
       rescue TriangleError
     else valid_triangl?
