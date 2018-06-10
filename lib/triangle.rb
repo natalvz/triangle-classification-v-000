@@ -40,6 +40,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError
+    end
     else valid_triangl?
     end
       
